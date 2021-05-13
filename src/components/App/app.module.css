@@ -149,4 +149,8 @@ img {
 	.hexigon_shape:hover {
 		transform: translateY(-20px);
 	}
+
+	.hero_text_container {
+		width: 90%;
+	}
 }
