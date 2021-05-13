@@ -18,7 +18,7 @@ const App = () => {
 						Express, MongoDB and vanilla CSS.
 					</div>
 					<div className={classname.button_container}>
-						<button className={classname.button}>Contact Me</button>
+						<button className={classname.button}>View Portfolio</button>
 					</div>
 				</div>
 				<div className={classname.hero_image_container}>

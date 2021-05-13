@@ -152,5 +152,30 @@ img {
 
 	.hero_text_container {
 		width: 90%;
+		display: grid;
+		justify-items: center;
+	}
+
+	.name_text {
+		margin-top: 5px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.title_tagline {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.details_text {
+		margin: auto;
+		margin-top: 20px;
+		font-size: 15px;
+		width: 80%;
+		text-align: center;
+	}
+
+	.button_container {
+		justify-content: center;
 	}
 }
