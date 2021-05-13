@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../Navbar';
 import classname from './app.module.css';
-import myImage from '../../assets/IMG_7376.JPG';
+import myImage from '../../assets/me.png';
 const App = () => {
 	return (
 		<div className={classname.site_layout}>
@@ -22,7 +22,9 @@ const App = () => {
 					</div>
 				</div>
 				<div className={classname.hero_image_container}>
-					<img src={myImage} alt='' />
+					<div className={classname.hexigon_shape}>
+						<img src={myImage} alt='' />
+					</div>
 				</div>
 			</div>
 		</div>
