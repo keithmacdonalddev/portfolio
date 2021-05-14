@@ -3,7 +3,9 @@ import React from 'react';
 const Projects = () => {
 	return (
 		<div>
-			<div className=''>Projects Page</div>
+			<a href='https://www.reacttracker.com' target='_blank'>
+				React Tracker
+			</a>
 		</div>
 	);
 };
