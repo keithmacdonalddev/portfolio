@@ -8,6 +8,24 @@ const About = () => {
 			<div className={clicked ? classname.main2 : classname.main}>
 				<div className=''>Emma</div>
 			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
 		</div>
 	);
 };
