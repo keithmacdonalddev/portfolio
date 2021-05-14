@@ -1,6 +1,7 @@
 import React from 'react';
 import classname from './home.module.css';
 import myImage from '../../assets/me.png';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -14,7 +15,9 @@ const Home = () => {
 					Express, MongoDB and vanilla CSS.
 				</div>
 				<div className={classname.button_container}>
-					<button className={classname.button}>View Portfolio</button>
+					<Link to='/projects'>
+						<button className={classname.button}>View Portfolio</button>
+					</Link>
 				</div>
 			</div>
 			<div className={classname.hero_image_container}>
