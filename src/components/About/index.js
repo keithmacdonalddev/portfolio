@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classname from './about.module.css';
 
 const About = () => {
+	const [clicked, setClicked] = useState(false);
 	return (
-		<div>
-			<div className=''>About Page</div>
+		<div onClick={() => setClicked(!clicked)} className={classname.container}>
+			<div className={clicked ? classname.main2 : classname.main}>
+				<div className=''>Emma</div>
+			</div>
 		</div>
 	);
 };
