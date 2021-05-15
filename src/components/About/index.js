@@ -32,52 +32,52 @@ const About = () => {
 				</button>
 				<div onClick={() => setClicked(!clicked)} className={classname.container}>
 					<div className={clicked ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 				<div onClick={() => setClicked2(!clicked2)} className={classname.container}>
 					<div className={clicked2 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 
 				<div onClick={() => setClicked3(!clicked3)} className={classname.container}>
 					<div className={clicked3 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 
 				<div onClick={() => setClicked4(!clicked4)} className={classname.container}>
 					<div className={clicked4 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 
 				<div onClick={() => setClicked5(!clicked5)} className={classname.container}>
 					<div className={clicked5 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 
 				<div onClick={() => setClicked6(!clicked6)} className={classname.container}>
 					<div className={clicked6 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 
 				<div onClick={() => setClicked7(!clicked7)} className={classname.container}>
 					<div className={clicked7 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 				<div onClick={() => setClicked8(!clicked8)} className={classname.container}>
 					<div className={clicked8 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 				<div onClick={() => setClicked9(!clicked9)} className={classname.container}>
 					<div className={clicked9 ? classname.main2 : classname.main}>
-						<div className=''>Emma</div>
+						<div className={classname.name}>Emma</div>
 					</div>
 				</div>
 			</div>

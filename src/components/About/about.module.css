@@ -5,6 +5,10 @@
 	padding: 10px;
 }
 
+.name {
+	border-radius: 50%;
+}
+
 .popper_group {
 	display: flex;
 	flex-wrap: wrap;
