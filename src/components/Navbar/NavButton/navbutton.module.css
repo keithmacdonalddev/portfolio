@@ -1,11 +1,10 @@
 .navbutton_container {
 	display: grid;
 	align-items: center;
-	background: white;
-	border-radius: 5px;
-	padding: 0 15px;
-	margin: 0 5px;
+	margin-right: 15px;
+	margin-left: 15px;
 	height: 50px;
 	font-family: var(--font-mono);
+	color: var(--color-primary-100);
 	letter-spacing: 1px;
 }

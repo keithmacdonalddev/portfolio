@@ -32,7 +32,7 @@ const About = () => {
 				</button>
 				<div onClick={() => setClicked(!clicked)} className={classname.container}>
 					<div className={clicked ? classname.main2 : classname.main}>
-						<div className={classname.name}>Emma</div>
+						<div className={clicked ? classname.name_popped : classname.name}>Emma</div>
 					</div>
 				</div>
 				<div onClick={() => setClicked2(!clicked2)} className={classname.container}>

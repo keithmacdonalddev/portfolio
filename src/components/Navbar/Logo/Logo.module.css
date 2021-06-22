@@ -1,5 +1,5 @@
 .logo_container {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	height: 70px;
@@ -7,7 +7,7 @@
 }
 
 .logo_initials {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	width: 40px;
@@ -19,4 +19,63 @@
 
 .logo_name {
 	padding: 0 10px;
+}
+
+.button_background {
+	position: absolute;
+	right: calc(50% - 37px);
+	top: -13px;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.6);
+	transition: all 500ms;
+	cursor: pointer;
+}
+
+.button_background:hover {
+	box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.7);
+	border: 2px solid white;
+}
+.create_ticket_button {
+	display: grid;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	right: calc(50% - 28px);
+	top: 8px;
+	padding: 0 5px;
+	background: #242221;
+	border: 1px solid rgb(211, 211, 211);
+	color: white;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 50%;
+	width: 55px;
+	height: 52px;
+	transition: all 300ms;
+	box-shadow: inset 0 0 12px 3px rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.create_ticket_button:hover {
+	filter: brightness(0.96);
+	border: 1px solid white;
+	transform: scale(0.99);
+}
+
+.initials {
+	font-size: 24;
+	font-weight: 700;
+	background: -webkit-linear-gradient(
+		#f3ed99 0%,
+		#f6e27a 22%,
+		#cb9b51 45%,
+		#cc9f5a 50%,
+		#cb9b51 55%,
+		#f6e27a 78%,
+		#f3ed99 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

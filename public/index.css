@@ -1,5 +1,40 @@
 :root {
 	--font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+	--color-primary-900: #dee3ea;
+	--color-primary-800: #b2bdcd;
+	--color-primary-700: #5d7290;
+	--color-primary-600: #323d4d;
+	--color-primary-300: #242c37;
+	--color-primary-200: #151a21;
+	--color-primary-100: #0b0e11;
+	--color-secondary-washed-out: #879eed;
+	--color-secondary: #5575e7;
+	--color-accent-glow: rgba(253, 77, 77, 0.3);
+	--color-accent: #fd4d4d;
+	--color-accent-hover: #fd6868;
+	--color-accent-disabled: #f5bfbf;
+	--color-green: #4bff97;
+	--spacing-xxsmall-px: 4px;
+	--spacing-xsmall-px: 8px;
+	--spacing-small-px: 12px;
+	--spacing-medium-px: 16px;
+	--spacing-large-px: 20px;
+	--spacing-xlarge-px: 24px;
+	--spacing-xxlarge-px: 30px;
+	--spacing-xxsmall-vh: 4px;
+	--spacing-xsmall-vh: 8px;
+	--spacing-small-vh: 12px;
+	--spacing-medium-vh: 16px;
+	--spacing-large-vh: 20px;
+	--spacing-xlarge-vh: 24px;
+	--spacing-xxlarge-vh: 30px;
+	--spacing-xxsmall-vw: 4px;
+	--spacing-xsmall-vw: 8px;
+	--spacing-small-vw: 12px;
+	--spacing-medium-vw: 16px;
+	--spacing-large-vw: 20px;
+	--spacing-xlarge-vw: 24px;
+	--spacing-xxlarge-vw: 30px;
 }
 
 html,
@@ -40,4 +75,9 @@ video {
 	border: 0;
 	font-size: 100%;
 	list-style: none;
+}
+*,
+:after,
+:before {
+	box-sizing: border-box;
 }

@@ -1,0 +1,154 @@
+.hero_text_container {
+	max-width: 800px;
+}
+
+.name_text {
+	grid-column: 1/2;
+	font-size: clamp(30px, 5vw, 80px);
+	font-weight: 600;
+	text-shadow: 1px 1px 1px rgba(40, 173, 173, 0.1);
+}
+
+.title_tagline {
+	grid-column: 1/2;
+	font-size: clamp(30px, 5vw, 75px);
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.details_text {
+	grid-column: 1/2;
+	font-size: clamp(14px, 2vw, 22px);
+	margin-top: 10px;
+	width: clamp(250px, 40vw, 600px);
+	color: rgba(134, 134, 134, 1);
+}
+
+.button_container {
+	grid-column: 1/2;
+	display: flex;
+	align-items: flex-end;
+	height: 80px;
+	width: 100%;
+}
+
+.button {
+	padding: 10px 25px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 300ms;
+}
+
+.button:hover {
+	filter: brightness(0.9);
+	transform: scale(0.95);
+}
+
+.hero_image_container {
+	display: grid;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 20vw;
+	margin-bottom: 100px;
+}
+
+.hero_image_container::before {
+	content: '';
+	position: absolute;
+	bottom: -70px;
+	border-radius: 50%;
+	width: 100%;
+	height: 60px;
+	background: radial-gradient(rgba(0, 0, 0, 0.35), transparent, transparent);
+	transition: 0.5s;
+}
+
+.hero_image_container:hover::before {
+	opacity: 0.8;
+	transform: scale(0.8);
+}
+
+.hexigon_shape {
+	display: flex;
+	position: absolute;
+	justify-self: center;
+	top: 0;
+	width: clamp(100px, 15vw, 250px);
+	height: clamp(150px, 20vw, 300px);
+	background: linear-gradient(rgba(9, 255, 255, 0.25), rgba(223, 2, 35, 0.25));
+	transition: all 1s;
+	clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.hexigon_shape:hover {
+	transition: all 1s;
+	transform: translateY(-30px);
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+	object-fit: contain;
+	margin-top: 10%;
+	width: 100%;
+	height: 100%;
+}
+
+.section {
+	position: absolute;
+	top: 0;
+	height: auto;
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+	background: red;
+}
+
+@media (max-width: 500px) {
+	.hero_text_container {
+		width: 90%;
+		display: grid;
+		justify-items: center;
+	}
+
+	.name_text {
+		margin-top: 5px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.title_tagline {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.details_text {
+		margin: auto;
+		margin-top: 20px;
+		font-size: 15px;
+		width: 80%;
+		text-align: center;
+	}
+
+	.button_container {
+		justify-content: center;
+	}
+
+	.hero_image_container::before {
+		bottom: -150px;
+		width: 220px;
+		display: flex;
+		justify-self: center;
+	}
+	.hero_image_container {
+		margin-bottom: 180px;
+	}
+	.hexigon_shape {
+		width: 150px;
+		height: 200px;
+	}
+	.hexigon_shape:hover {
+		transform: translateY(-20px);
+	}
+}
