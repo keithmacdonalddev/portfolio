@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, BrowserRouter, Route } from 'react-router-dom';
+// import { Link, BrowserRouter, Route } from 'react-router-dom';
 import { TweenMax, Power3 } from 'gsap';
 // Components
 import NavBar from './components/Navbar';
 import HamburgerMenu from './components/HamburgerMenu';
 // Views
-import Home from './views/Home';
-import Contact from './views/Contact';
-import Projects from './views/Projects';
-import About from './views/About';
+// import Home from './views/Home';
+// import Contact from './views/Contact';
+// import Projects from './views/Projects';
+// import About from './views/About';
 // Images
 import myImage from './assets/me.png';
 import reactTrackerFrontPage from './assets/reactTrackerFrontPage.png';
@@ -17,12 +17,12 @@ import classname from './app.module.css';
 
 const App = () => {
 	let mainNav = useRef(null);
-	let heroContainer = useRef(null);
-	let heroTitle = useRef(null);
-	let heroSubTitle = useRef(null);
 	let heroText = useRef(null);
+	let heroTitle = useRef(null);
 	let heroImage = useRef(null);
 	let heroButton = useRef(null);
+	let heroSubTitle = useRef(null);
+	let heroContainer = useRef(null);
 
 	useEffect(() => {
 		TweenMax.from(mainNav, 1, { opacity: 0, y: -100, ease: Power3.easeOut });
@@ -36,7 +36,7 @@ const App = () => {
 
 	const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 	const [isDarkMode, setIsDarkMode] = useState(false);
-	const [gradientShouldChange, setGradientShouldChange] = useState(true);
+	// const [gradientShouldChange, setGradientShouldChange] = useState(true);
 	const [gradient, setGradient] = useState(false);
 	const [gradients, setGradients] = useState([
 		'linear-gradient(20deg, #4cecf8, #0071df)',
@@ -45,6 +45,7 @@ const App = () => {
 		'linear-gradient(106deg,#989898,#1d1d1d)',
 	]);
 	let activeGradient;
+	console.log(setIsDarkMode, setGradients);
 	return (
 		<div className={isDarkMode ? classname.topbar_dark_mode : classname.topbar_light_mode}>
 			<div className={classname.site_layout}>
@@ -130,7 +131,7 @@ const App = () => {
 								<img
 									className={classname.project_image}
 									src={reactTrackerFrontPage}
-									alt='photo of front page of www.reacttracker.com'
+									alt='front page of www.reacttracker.com'
 								/>
 								<div className={classname.project_overlay_light}></div>
 								<div className={classname.project_overlay}></div>
@@ -146,7 +147,7 @@ const App = () => {
 								<img
 									className={classname.project_image}
 									src={reactTrackerFrontPage}
-									alt='photo of front page of www.reacttracker.com'
+									alt='front page of www.reacttracker.com'
 								/>
 								<div className={classname.project_overlay_light}></div>
 								<div className={classname.project_overlay}></div>

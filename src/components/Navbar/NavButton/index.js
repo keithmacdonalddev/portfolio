@@ -2,7 +2,7 @@ import React from 'react';
 import classname from './navbutton.module.css';
 
 const specialStyle = {
-	borderBottom: '3px solid var(--color-primary-100)',
+	borderBottom: '3px solid var(--color-primary-700)',
 	borderRadius: 0,
 };
 const NavButton = ({ buttonText, special }) => {
